@@ -1,22 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Valentine’s Day ❤️</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Valentine ❤️</title>
+  <link rel="stylesheet" href="Valentine.css" />
 </head>
+
 <body>
-    <div class="container">
-        <h1>Happy Valentine’s Day!</h1>
-        <p>Roses are red, violets are blue, sending lots of love, straight to you! 💌</p>
-        <p>— Your Love Sahej</p>
+  <div class="container">
+    <h1>Happy Valentine’s Day ❤️</h1>
+    <p class="subtext">I have 2 important questions for you… 😳</p>
+
+    <!-- Question 1 -->
+    <div class="question-box" id="q1">
+      <h2>Will you be my Valentine? 💌</h2>
+      <div class="buttons">
+        <button class="btn yes" onclick="answerYes(1)">Yes 😍</button>
+        <button class="btn no" onclick="answerNo(1)">No 🙄</button>
+      </div>
+      <p class="result" id="result1"></p>
     </div>
 
-    <!-- Heart animations -->
-    <div id="hearts"></div>
+    <!-- Question 2 -->
+    <div class="question-box" id="q2" style="display:none;">
+      <h2>Will you spend your whole life with me? 💍</h2>
+      <div class="buttons">
+        <button class="btn yes" onclick="answerYes(2)">Yes 🥹</button>
+        <button class="btn no" onclick="answerNo(2)">No 😭</button>
+      </div>
+      <p class="result" id="result2"></p>
+    </div>
 
-    <script src="script.js"></script>
+    <!-- Final Message -->
+    <div class="final-box" id="final" style="display:none;">
+      <h2>YAYYYY 😭❤️</h2>
+      <p>You just made me the happiest person ever.</p>
+      <p class="signature">— Your Love Sahej💖</p>
+    </div>
+  </div>
+
+  <div id="hearts"></div>
+
+  <script src="Valentines.js"></script>
 </body>
 </html>
+
+
 
