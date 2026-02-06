@@ -114,11 +114,11 @@ h1 {
   font-weight: bold;
 }
 
-.name-line{
-  margin-top: 18px;
-  font-size: 26px;
-  font-weight: 800;
-  letter-spacing: 1px;
+.name-line .heart{
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 32px;
+  animation: pulse 0.9s infinite;
 }
 
 .name-line .heart{
@@ -132,3 +132,4 @@ h1 {
   50%{ transform: scale(1.25); }
   100%{ transform: scale(1); }
 }
+
