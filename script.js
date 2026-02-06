@@ -23,24 +23,34 @@ setInterval(createHeart, 250);
 function answerYes(q) {
   if (q === 1) {
     document.getElementById("result1").innerText = "YAYYY 😍 I knew it!!";
-    document.getElementById("q2").style.display = "block";
+
+    // Hide question 1 after yes
+    setTimeout(() => {
+      document.getElementById("q1").style.display = "none";
+      document.getElementById("q2").style.display = "block";
+    }, 700);
   }
 
   if (q === 2) {
     document.getElementById("result2").innerText = "STOPPPP 🥹💍❤️";
-    document.getElementById("final").style.display = "block";
-document.getElementById("final").scrollIntoView({ behavior: "smooth" });
 
+    // Hide question 2 and show final message
+    setTimeout(() => {
+      document.getElementById("q2").style.display = "none";
+      document.getElementById("final").style.display = "block";
+      document.getElementById("final").scrollIntoView({ behavior: "smooth" });
+    }, 700);
   }
 }
 
 function answerNo(q) {
   if (q === 1) {
-    document.getElementById("result1").innerText = "Wrong answer 😤 Click YES 😌";
+    document.getElementById("result1").innerText =
+      "Wrong answer 😤 Click YES 😌";
   }
 
   if (q === 2) {
-    document.getElementById("result2").innerText = "Excuse me?? 😭 Click YES right now 😤❤️";
+    document.getElementById("result2").innerText =
+      "Excuse me?? 😭 Click YES right now 😤❤️";
   }
 }
-
