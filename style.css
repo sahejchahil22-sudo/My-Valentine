@@ -107,3 +107,28 @@ h1 {
   0% { transform: translateY(0) scale(1); opacity: 1; }
   100% { transform: translateY(-110vh) scale(1.6); opacity: 0; }
 }
+
+.bigmsg{
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.name-line{
+  margin-top: 18px;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.name-line .heart{
+  display: inline-block;
+  margin: 0 10px;
+  animation: pulse 0.9s infinite;
+}
+
+@keyframes pulse{
+  0%{ transform: scale(1); }
+  50%{ transform: scale(1.25); }
+  100%{ transform: scale(1); }
+}
