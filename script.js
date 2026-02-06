@@ -29,6 +29,8 @@ function answerYes(q) {
   if (q === 2) {
     document.getElementById("result2").innerText = "STOPPPP 🥹💍❤️";
     document.getElementById("final").style.display = "block";
+document.getElementById("final").scrollIntoView({ behavior: "smooth" });
+
   }
 }
 
@@ -41,3 +43,4 @@ function answerNo(q) {
     document.getElementById("result2").innerText = "Excuse me?? 😭 Click YES right now 😤❤️";
   }
 }
+
